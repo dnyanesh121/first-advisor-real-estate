@@ -1,0 +1,83 @@
+/* ==========================================================================
+   First Advisor Real Estate — Design Tokens
+   Sampled from the homepage design reference.
+   Change brand values here; every page and component reads from these.
+   ========================================================================== */
+:root {
+  /* Brand — primary navy (headings, primary buttons, active tiles, stats) */
+  --navy-950: #021F4D;
+  --navy-900: #002B66;
+  --navy:     #003986;   /* headline navy  */
+  --navy-700: #014196;   /* active tile    */
+  --navy-600: #0247A5;   /* stat blocks    */
+  --navy-500: #1559C1;
+  --navy-100: #E6EEF9;
+  --navy-50:  #F1F5FC;
+
+  /* Brand — accent red-orange (two-tone headings, CTAs, icons) */
+  --accent-700: #B92C0B;
+  --accent:     #D6350F;  /* "Services", "Properties" */
+  --accent-500: #E34A25;  /* buttons                  */
+  --accent-400: #F05E3B;  /* gradient end             */
+  --accent-100: #FCE9E4;
+  --accent-50:  #FEF4F1;
+
+  /* Logo colours (1st ADVISOR mark) */
+  --logo-hi: #0090D0; --logo-lo: #005090; --logo-red: #D03000; --logo-sliver: #40A0E0; --logo-rule: #BDBDC6; --logo-tag: #F08A20;
+
+  /* Neutrals */
+  --bg:       #F7F9FB;   /* page background */
+  --bg-2:     #EFF4F9;
+  --surface:  #FFFFFF;
+  --ink:      #1B2333;
+  --ink-2:    #3A4354;
+  --muted:    #5E6778;
+  --subtle:   #8A93A3;
+  --line:     #E2E8F0;
+  --line-2:   #D5DDE8;
+
+  /* Feedback */
+  --star:  #FFC800;
+  --ok:    #138A52; --ok-bg: #E5F6EC;
+  --warn:  #B66A00; --warn-bg:#FFF4E0;
+
+  /* Gradients */
+  --grad-navy:   linear-gradient(135deg, #0247A5 0%, #003986 55%, #002B66 100%);
+  --grad-accent: linear-gradient(100deg, #D6350F 0%, #E34A25 45%, #F05E3B 100%);
+  --grad-sky:    linear-gradient(180deg, #F7F9FB 0%, #E9F1F9 45%, #DCE8F4 100%);
+  --grad-hero:   radial-gradient(1200px 500px at 75% 30%, #FFFFFF 0%, rgba(255,255,255,0) 60%),
+                 linear-gradient(180deg, #F5F8FB 0%, #E3EDF7 55%, #D5E4F2 100%);
+
+  /* Typography */
+  --font: "Poppins", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --fs-xs: 12px; --fs-sm: 13.5px; --fs-base: 15px; --fs-md: 16.5px; --fs-lg: 19px;
+  --fs-h3: 20px;
+  --fs-h2: clamp(26px, 3.2vw, 36px);
+  --fs-h1: clamp(30px, 4.6vw, 52px);
+  --fw-r: 400; --fw-m: 500; --fw-sb: 600; --fw-b: 700;
+
+  /* Spacing — 4px base */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 20px; --s6: 24px; --s8: 32px; --s10: 40px; --s12: 48px; --s16: 64px; --s20: 80px;
+  --section: clamp(56px, 7vw, 60px);
+  --gutter: 16px;
+  --container: 1200px;
+
+  /* Radii */
+  --r-xs: 4px; --r-sm: 6px; --r: 10px; --r-lg: 14px; --r-xl: 20px; --r-pill: 999px;
+
+  /* Shadows — soft, cool-tinted like the reference cards */
+  --sh-1: 0 1px 2px rgba(0, 43, 102, .06), 0 2px 8px rgba(0, 43, 102, .06);
+  --sh-2: 0 2px 4px rgba(0, 43, 102, .05), 0 8px 24px rgba(0, 43, 102, .10);
+  --sh-3: 0 12px 40px rgba(0, 43, 102, .18);
+  --sh-accent: 0 8px 22px rgba(214, 53, 15, .28);
+  --sh-navy: 0 8px 22px rgba(0, 57, 134, .25);
+
+  /* Motion */
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --t-fast: .18s; --t: .3s; --t-slow: .6s;
+
+  --header-h: 76px;
+  --z-header: 50; --z-drawer: 70; --z-modal: 90; --z-toast: 100;
+}
+@media (max-width: 960px) { :root { --header-h: 64px; } }
